@@ -36,6 +36,7 @@ jobs:
 
   ephemeral-deploy:
     runs-on: ubuntu-latest
+    environment: aws
     defaults:
       run:
         working-directory: ${{ env.WORKING_DIRECTORY }}
