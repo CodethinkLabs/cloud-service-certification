@@ -58,12 +58,12 @@ jobs:
 
       - name: Make sure we have destroyed any leftover resources from previous runs
         if: always()
-        uses: ./.github/actions/destroy
+        uses: ./.github/actions/nuke
 
-      - uses: ./.github/actions/apply
+      #- uses: ./.github/actions/apply
 
       # TODO: Run EKS specific jobs/steps here.
 
-      - name: Terraform Destroy
-        if: always()
-        uses: ./.github/actions/destroy
+      #- name: Terraform Destroy
+      #  if: always()
+      #  uses: ./.github/actions/destroy
